@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+
+    char button;
+    cout << "Type a charcter: ";
+    cin >> button;
+    // use single quotes for charcters other wise this error popsup
+    // error - ISO C++ forbids comparison between pointer and integer [-fpermissive]
+    if (button == 'a')
+    {
+        cout << "hii";
+    }
+    else if (button == 'b')
+    {
+        cout << "hello";
+    }
+    else if (button == 'c')
+    {
+        cout << "dude";
+    }
+    else
+    {
+        cout << "wrong charcater";
+    }
+
+    // using switch statement
+    switch (button)
+    {
+    case 'a':
+        cout << "hii";
+        break;
+    case 'b':
+        cout << "hello";
+        break;
+    case 'c':
+        cout << "bro";
+        break;
+    default:
+        cout << "enter a valid character";
+        break;
+    }
+
+    return 0;
+}
